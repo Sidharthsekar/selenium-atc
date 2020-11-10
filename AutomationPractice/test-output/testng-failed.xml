@@ -5,9 +5,9 @@
     <classes>
       <class name="com.ap.testcases.CheckOrderHistory">
         <methods>
-          <include name="fetchOrderDetails"/>
           <include name="closeBrowser"/>
           <include name="browserLaunch"/>
+          <include name="checkoutProduct"/>
         </methods>
       </class> <!-- com.ap.testcases.CheckOrderHistory -->
     </classes>

@@ -13,14 +13,20 @@ import com.ap.baselibrary.BaseClass;
 public class ScreenShot extends BaseClass {
 	private static JavascriptExecutor js;
 	
-	public static void getPageScreenShot(String pageName) {
+	public static void getPageScreenShot(String pageName)  {
 		
-		int windowHeight = driver.manage().window().getSize().getHeight();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e1) {
+			e1.printStackTrace();
+		}
+		long windowHeight = driver.manage().window().getSize().getHeight();
+		
 		js = (JavascriptExecutor)driver;
-		int scrollHeight = (int)js.executeScript("return document.documentElement.scrollHeight");
-		
+		long scrollHeight = (long)js.executeScript("return document.documentElement.scrollHeight");
+		int screenCount = 1;
 		do {
-			int screenCount = 1;
+			
 			File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			File target = new File("./test-output/screenshots/"+pageName+" "+String.valueOf(screenCount) +".png");
 			try {
@@ -28,8 +34,10 @@ public class ScreenShot extends BaseClass {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			windowHeight -= scrollHeight;
-		}while(windowHeight<0);
+			js.executeScript("window.scrollBy(0,"+String.valueOf(windowHeight)+")", "");
+			scrollHeight = scrollHeight - windowHeight;
+			screenCount++;
+		}while(scrollHeight>0);
 		
 		
 		

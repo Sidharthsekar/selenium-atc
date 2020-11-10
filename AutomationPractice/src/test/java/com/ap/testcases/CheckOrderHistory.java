@@ -30,7 +30,7 @@ public class CheckOrderHistory extends BaseClass {
 
 	@AfterClass
 	public void closeBrowser() {
-		//driver.quit();
+		driver.quit();
 	}
 
 	@Test(priority = 1, dataProvider = "OrderDetails")
@@ -126,14 +126,21 @@ public class CheckOrderHistory extends BaseClass {
 		ShoppingCartSummary.clickShippingCheckout();
 		ShoppingCartSummary.selectPayByWire();
 		ShoppingCartSummary.clickConfirmMyOrder();
+		String referenceId = ShoppingCartSummary.getReferenceId();
 		
 		MyAccountPage.clickUserProfile();
 		MyAccountPage.clickOrderDetails();
 		
+		OrderHistoryDetail.clickOrderDetail();
+		
+		OrderHistoryDetail.verifyReferenceId(referenceId);
+		
 		ScreenShot.getPageScreenShot("Order History");
 		
-		//MyAccountPage.clickSignOut();
+
+		
+		MyAccountPage.clickSignOut();
 	}
 	
-	 
+	
 }

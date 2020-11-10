@@ -7,9 +7,9 @@ import com.ap.reuselibrary.PageActions;
 
 public class SignInPage extends BaseClass {
 
-	public static By txtLoginEmail = By.xpath("//input[@id='email']");
-	public static By txtLoginPassword = By.xpath("//input[@id='passwd']");
-	public static By btnLoginSignIn = By.xpath("//button[@id='SubmitLogin']");
+	private static By txtLoginEmail = By.xpath("//input[@id='email']");
+	private static By txtLoginPassword = By.xpath("//input[@id='passwd']");
+	private static By btnLoginSignIn = By.xpath("//button[@id='SubmitLogin']");
 
 	public static void enterLoginEmail(String inputText) {
 		PageActions.setText(txtLoginEmail, inputText);
