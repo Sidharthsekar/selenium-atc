@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="79316" started-at="2020-11-10T04:32:05 IST" finished-at="2020-11-10T04:33:25 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="79316" started-at="2020-11-10T04:32:05 IST" finished-at="2020-11-10T04:33:25 IST">
+      <class name="com.ap.testcases.CheckOrderHistory">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:com.ap.testcases.CheckOrderHistory@1c3a4799]" name="browserLaunch" is-config="true" duration-ms="17470" started-at="2020-11-10T04:32:05 IST" finished-at="2020-11-10T04:32:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method status="PASS" signature="fetchOrderDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.ap.testcases.CheckOrderHistory@1c3a4799]" name="fetchOrderDetails" duration-ms="11" started-at="2020-11-10T04:32:24 IST" data-provider="OrderDetails" finished-at="2020-11-10T04:32:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sidharth.sekar@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qwerty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sidharth]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ABC Co]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Street 1]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Street 2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Illinois]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Idaho]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[60005]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[9087654321]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Add Info]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[Alias2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchOrderDetails -->
+        <test-method status="PASS" signature="loginUser()[pri:2, instance:com.ap.testcases.CheckOrderHistory@1c3a4799]" name="loginUser" duration-ms="6511" started-at="2020-11-10T04:32:24 IST" finished-at="2020-11-10T04:32:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUser -->
+        <test-method status="PASS" signature="addAddress()[pri:3, instance:com.ap.testcases.CheckOrderHistory@1c3a4799]" name="addAddress" duration-ms="15952" started-at="2020-11-10T04:32:31 IST" finished-at="2020-11-10T04:32:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="selectProduct()[pri:4, instance:com.ap.testcases.CheckOrderHistory@1c3a4799]" name="selectProduct" duration-ms="23880" started-at="2020-11-10T04:32:46 IST" finished-at="2020-11-10T04:33:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProduct -->
+        <test-method status="PASS" signature="checkoutProduct()[pri:5, instance:com.ap.testcases.CheckOrderHistory@1c3a4799]" name="checkoutProduct" duration-ms="14343" started-at="2020-11-10T04:33:10 IST" finished-at="2020-11-10T04:33:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutProduct -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ap.testcases.CheckOrderHistory@1c3a4799]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2020-11-10T04:33:25 IST" finished-at="2020-11-10T04:33:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.ap.testcases.CheckOrderHistory -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
